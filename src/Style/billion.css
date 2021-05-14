@@ -1,0 +1,24 @@
+@font-face {
+  font-family: vivaldi;
+  src: url("../font/vivaldi.ttf");
+}
+
+.logo-billion {
+  margin: 0 60px 0 20px;
+  /* font-size: 150px; */
+  text-align: center;
+  font-family: "vivaldi";
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.child1 {
+  color: #ba181b;
+}
+.child2 {
+  color: #adb5bd;
+}

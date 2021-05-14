@@ -1,0 +1,44 @@
+body {
+  background-color: #161a1d;
+  overflow: auto;
+  padding: 5px;
+  touch-action: none;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  font-family: "Montserrat";
+  text-align: justify;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+.load {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  margin: 0;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #363c42;
+  /* border-radius: 6px; */
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 0 6px #5d6061;
+}

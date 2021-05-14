@@ -1,0 +1,31 @@
+.pagedoc {
+  width: 90%;
+  min-height: 100vh;
+  padding: 5%;
+}
+
+.pagedoc-title {
+  color: #0b090a;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pagedoc-begin-text {
+  font-size: 2em;
+}
+.pagedoc-text {
+  color: #161a1d;
+  font-size: 0.8em;
+}
+.pagedoc-cnt-auteur {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+.pagedoc-auteur {
+  width: 50%;
+  text-align: center;
+  font-size: 0.4em;
+  color: #161a1d;
+}

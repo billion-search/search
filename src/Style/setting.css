@@ -1,0 +1,212 @@
+.setting {
+  font-size: 1.2rem;
+}
+
+.setting-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+.setting-opt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-color: #212529c7;
+  width: 40%;
+  min-width: 350px;
+  height: 550px;
+  padding: 30px;
+  box-shadow: 0 2px 8px 1px #25282b;
+  border-radius: 5%;
+}
+
+.setting-opt-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #adb5bd;
+  cursor: pointer;
+  margin: 6px;
+}
+
+.setting-opt-bcg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+}
+/****************************************************************/
+/****************************************************************/
+/****************************************************************/
+.opt-weig {
+  display: flex;
+  flex-direction: column;
+}
+.weig {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #adb5bd;
+  font-size: 1em;
+}
+.opt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container,
+.container label {
+  cursor: pointer;
+}
+.container {
+  position: relative;
+  width: 100%;
+  padding-left: 35px;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  color: #adb5bd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radio-container {
+  border-bottom: 1px solid #adb5bd;
+  font-size: 1em;
+}
+.container:hover {
+  color: #e9ecef;
+  border-color: #e9ecef;
+}
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  /* top: 0; */
+  bottom: 0.4em;
+  left: 0;
+  right: 0;
+  /* padding-top: 1px; */
+  border: 2px solid #adb5bd;
+  box-sizing: border-box;
+}
+.radio-checkmark {
+  border-radius: 100%;
+  height: 0.8em;
+  width: 0.8em;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  border-color: #e9ecef;
+}
+.container:hover input ~ .checkmark::after {
+  border-color: #e9ecef;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .radio-checkmark {
+  border-color: #e9ecef;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .radio-checkmark:after {
+  width: 0.4em;
+  height: 0.39em;
+  border-radius: 100%;
+  background: #e9ecef;
+}
+
+.ligth-container {
+  width: auto;
+  font-size: 0.7em;
+}
+.ligth-container .radio-checkmark {
+  width: 1em;
+  height: 1em;
+}
+
+.checkbox-checkmark {
+  height: 0.8em;
+  width: 0.8em;
+  bottom: 0.5em;
+}
+
+/* Style the checkmark/indicator */
+.container .checkbox-checkmark:after {
+  /* left: 9px; */
+  bottom: 0.5px;
+  width: 0.2em;
+  height: 0.39em;
+  border: solid #adb5bd;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.text-container {
+  display: flex;
+  align-items: stretch;
+}
+.input-text {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #adb5bd;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  color: #e9ecef;
+  font-family: "Montserrat";
+}
+
+.setting-save {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5em;
+  /* height: 4em; */
+  margin-top: 1em;
+  padding: 1px;
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  color: #adb5bd;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.setting-save:hover {
+  border-color: #e9ecef;
+  color: #e9ecef;
+}
